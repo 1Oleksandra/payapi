@@ -1,0 +1,78 @@
+/* Обнулення всіх відступів, полів та бордерів */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%; /* Щоб контейнер займав всю висоту */
+    margin: 0;
+    padding: 0;
+}
+
+  /* Видалення стандартного спискового маркування */
+
+  ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+  form, input, textarea, button {
+    all: unset; /* Обнуляє всі стилі елементів */
+    box-sizing: border-box;
+}
+
+/* Оновлені стилі для інпутів та textarea */
+input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+}
+
+  /* Вирівнювання шрифтів та розмірів */
+  body {
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Видалення стандартних стилів для таблиць */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Видалення стандартних стилів для цитат */
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote::before, blockquote::after,
+  q::before, q::after {
+    content: '';
+  }
+  
+  /* Вирівнювання HTML5-елементів */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  
+  /* Видалення стандартних стилів для кнопок та форм */
+  input, button, textarea, select {
+    font: inherit;
+  }
